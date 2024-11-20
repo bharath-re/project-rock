@@ -18,21 +18,21 @@ function Home() {
             id="34713095130"
             title="Wireless Bluetooth Headphones"
             price="$49.99"
-            rating="⭐⭐⭐⭐"
+            rating="5"
           />
           <Product
             image={monitor}
             id="34713095131"
             title="Smartwatch with Heart Rate Monitor"
             price="$149.99"
-            rating="⭐⭐⭐⭐☆"
+            rating="4"
           />
           <Product
             image={tv}
             id="34713095132"
             title="4K Ultra HD Smart TV - 55 inch"
             price="$399.99"
-            rating="⭐⭐⭐⭐⭐"
+            rating="3"
           />
         </div>
 
@@ -42,14 +42,14 @@ function Home() {
             id="34713095133"
             title="Portable Power Bank 10000mAh"
             price="$29.99"
-            rating="⭐⭐"
+            rating="2"
           />
           <Product
             image={laptop}
             id="34713095134"
             title="Gaming Laptop - 16GB RAM, 512GB SSD"
             price="$899.99"
-            rating="⭐⭐⭐⭐⭐"
+            rating="1"
           />
         </div>
 
@@ -59,7 +59,7 @@ function Home() {
             id="34713095135"
             title="Noise Cancelling Over-Ear Headphones"
             price="$89.99"
-            rating="⭐⭐⭐⭐☆"
+            rating="3"
           />
         </div>
       </div>

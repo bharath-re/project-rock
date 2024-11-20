@@ -2,14 +2,17 @@ import StoreIcon from "@mui/icons-material/Store";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <div className="left-bar">
-        <div className="shop__logo">
-          <StoreIcon />
-        </div>
+        <Link to="/">
+          <div className="shop__logo">
+            <StoreIcon />
+          </div>
+        </Link>
         <div className="shop__name">Amazon-Copy</div>
       </div>
       <div className="search-bar">
@@ -31,10 +34,12 @@ function Header() {
 
         <div className="your-carting">
           <span className="your-cart">
-            {" "}
-            <ShoppingCartIcon />
+            <Link to="/checkout">
+              {" "}
+              <ShoppingCartIcon />
+              <span className="cart-count"> 0 </span>
+            </Link>
           </span>
-          <span className="cart-count"> 0 </span>
         </div>
       </div>
     </header>

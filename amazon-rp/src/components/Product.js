@@ -5,16 +5,8 @@ function Product({ id, title, price, rating, image }) {
       <div className="product-info">
         <p>{title}</p>
         <p className="product__price">
-          <strong>${price}</strong>
-          <div className="product__rating">
-            {Array(rating)
-              .fill()
-              .map((_, i) => (
-                <span key={i} role="img" aria-label="star">
-                  ⭐
-                </span>
-              ))}
-          </div>
+          <strong>{price}</strong>
+          <div className="product__rating">{}</div>
         </p>
       </div>
       <button className="product__button">Add to Cart</button>
