@@ -43,3 +43,6 @@ function Product({ id, title, price, rating, image }) {
 }
 
 export default Product;
+
+
+// This are some changes to check in Git 
