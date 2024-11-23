@@ -1,17 +1,22 @@
-import earphones from "../images/earphones.jpg";
-import "../components/CheckoutProduct.css";
+import React from "react";
+import "./CheckoutProduct.css";
 
-function CheckoutProduct() {
+function CheckoutProduct({ id, title, price, rating, image }) {
   return (
-    <div className="checkout_product">
-      <div className="product_image">
-        <img src={earphones} className="pngsrc" />
-      </div>
-      <div className="checkout_details">
-        <p className="checkout_info"> Wireless Bluetooth Headphones</p>
-        <p className="checkout_price">$20</p>
-        <p className="rating"> ** </p>
-        <button className="checkout_basket">Add to Basket </button>
+    <div className="checkoutProduct">
+      <img src={image} alt={title} className="checkoutProduct__image" />
+      <div className="checkoutProduct__info">
+        <p className="checkoutProduct__title">{title}</p>
+        <p className="checkoutProduct__price">
+          <strong>{price}</strong>
+        </p>
+        <div className="checkoutProduct__rating">
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <span key={i}>⭐</span>
+            ))}
+        </div>
       </div>
     </div>
   );

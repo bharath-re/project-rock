@@ -1,10 +1,14 @@
+import React from "react";
 import StoreIcon from "@mui/icons-material/Store";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ basket }] = useStateValue(); // Access global state
+
   return (
     <header>
       <div className="left-bar">
@@ -35,9 +39,9 @@ function Header() {
         <div className="your-carting">
           <span className="your-cart">
             <Link to="/checkout">
-              {" "}
               <ShoppingCartIcon />
-              <span className="cart-count"> 0 </span>
+              {/* Display basket count */}
+              <span className="cart-count"> {basket?.length || 0} </span>
             </Link>
           </span>
         </div>

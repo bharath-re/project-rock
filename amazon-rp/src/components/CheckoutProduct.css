@@ -1,70 +1,52 @@
-/* General styles for the checkout product card */
-.checkout_product {
+.checkoutProduct {
   display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
   align-items: center;
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 10px 0;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  justify-content: space-between;
 }
 
-.checkout_product:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.checkoutProduct__image {
+  max-width: 180px;
+  object-fit: contain;
+  height: 200px;
 }
 
-/* Styles for the product image */
-.product_image img {
-  width: 150px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-/* Details section */
-.checkout_details {
+.checkoutProduct__info {
+  margin-left: 20px;
   flex: 1;
-  margin-left: 15px;
-  font-family: Arial, sans-serif;
 }
 
-/* Product info and price */
-.checkout_info {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.checkout_price {
-  font-size: 14px;
-  color: #b12704; /* Amazon-like red price color */
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-/* Product rating */
-.rating {
-  color: #ff9900; /* Amazon-like yellow for stars */
-  font-size: 14px;
+.checkoutProduct__title {
+  font-size: 18px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
-/* Add to Basket button */
-.checkout_basket {
-  background-color: #f0c14b;
-  border: 1px solid #a88734;
-  color: #111;
-  padding: 8px 12px;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.checkoutProduct__price {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.checkout_basket:hover {
-  background-color: #ddb347;
+.checkoutProduct__rating {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.checkoutProduct__rating span {
+  font-size: 18px;
+}
+
+.checkoutProduct__remove {
+  font-size: 16px;
+  color: #007185;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.checkoutProduct__remove:hover {
+  color: #f08c00;
 }
