@@ -1,9 +1,19 @@
-import React from 'react'
+import '../App.css';
 
-function BookEdit() {
+
+function BookEdit({book, onEdit}) {
+
+    // const handleClickEdit = (book)=> {
+    //     onEdit(book.id);
+    // }
   return (
-    <div>
-      
+        <div className='title-2'>
+      {/* <div className='edit-title'>
+       
+        <button className='edit-button' onClick={handleClickEdit}> edit </button>
+
+
+      </div> */}
     </div>
   )
 }

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import '../App.css';
 
 function BookCreate({onCreate}) {
     const [title,setTitle]=useState('');
@@ -14,10 +15,11 @@ function BookCreate({onCreate}) {
     };
   return (
     <div>
-        <form onSubmit={handleSubmit}>
-            <label> Title </label>
-            <input value={title} onChange={handleChange} />
-            <button> Create! </button>
+        <form className="form-1" onSubmit={handleSubmit}>
+            <h3 className='create-book'> create a book </h3>
+            <label className='title'> Title </label>
+            <input className='input' value={title} onChange={handleChange} />
+            <button className='create-button'> Create! </button>
         </form>
     </div>
   )
