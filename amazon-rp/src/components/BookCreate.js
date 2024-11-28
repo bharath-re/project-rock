@@ -14,12 +14,13 @@ function BookCreate({onCreate}) {
         setTitle('');
     };
   return (
-    <div>
-        <form className="form-1" onSubmit={handleSubmit}>
-            <h3 className='create-book'> create a book </h3>
-            <label className='title'> Title </label>
+    <div className='book-create'>
+         <h3> create a book </h3>
+        <form onSubmit={handleSubmit}>
+           
+            <label> Title </label>
             <input className='input' value={title} onChange={handleChange} />
-            <button className='create-button'> Create! </button>
+            <button className='button'> Create! </button>
         </form>
     </div>
   )

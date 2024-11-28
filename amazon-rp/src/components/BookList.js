@@ -1,20 +1,18 @@
 import BookShow from "./BookShow";
 import '../App.css';
 
-
-function BookList({books , onDelete}) {
-
+function BookList({ books, onDelete, onEdit }) {
     const renderedBooks = books.map((book) => {
-        return <div>
-            < BookShow key={book.id} book={book} onDelete={onDelete} />
-        
-        </div>
-    })
   return (
-    <div className="create-book">
-      {renderedBooks}
-    </div>
-  )
+    <BookShow key={book.id} book={book} onDelete={onDelete} onEdit={onEdit} />
+  );
+});
+
+    return (
+        <div className="book-list">
+            {renderedBooks}
+        </div>
+    );
 }
 
-export default BookList
+export default BookList;

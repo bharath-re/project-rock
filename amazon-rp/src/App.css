@@ -96,3 +96,109 @@ body {
   outline: none;
   box-shadow: 0 0 4px #c0392b; /* Focus effect */
 }
+/* General styling for the container */
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+  font-family: 'Arial', sans-serif; /* Simple font */
+  font-size: 16px;
+  color: #333; /* Dark text color */
+}
+
+/* Buttons container for delete/edit actions */
+.delete-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Shared button styling */
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Delete button specific styles */
+.delete-button {
+  background-color: #e74c3c; /* Red button */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* Edit button specific styles */
+.edit-button {
+  background-color: #5dade2; /* Blue button */
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #2e86c1;
+}
+
+/* Form container for BookEdit */
+.form1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #eef6fc; /* Light blue form background */
+  padding: 15px;
+  border: 1px solid #b3d4fc; /* Border matches the background */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555; /* Subtle dark gray */
+}
+
+/* Input field styling */
+form input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #5dade2; /* Blue border on focus */
+  box-shadow: 0 0 4px rgba(93, 173, 226, 0.5); /* Subtle blue glow */
+}
+
+/* Submit button inside form */
+form button {
+  align-self: flex-end;
+  background-color: #2ecc71; /* Green button */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #27ae60; /* Darker green */
+}
